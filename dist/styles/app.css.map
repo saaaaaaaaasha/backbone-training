@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.scss"],"names":[],"mappings":"AAAA,SAEI,MAAA,KACA,QAAA,MACA,WAAA,KACA,QAAA,KACA,YAAA","file":"app.css","sourcesContent":["body {\n  div {\n    color: white;\n    display: block;\n    background: #f45;\n    padding: 10px; \n    font-weight: bold;\n  }\n}"],"sourceRoot":"/source/"}
