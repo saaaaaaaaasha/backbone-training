@@ -47,7 +47,7 @@ gulp.task('clean', () => {
 });
 
 gulp.task('watch', () => {
-  gulp.watch(`${paths.js.src}/*.js`, ['build:js']);
+  gulp.watch(`${paths.js.src}/**/*.js`, ['build:js']);
   gulp.watch(`${paths.style.src}/*.scss`, ['build:css']);
   gulp.watch(`${dirs.src}/index.html`, ['build:html']);
 });
@@ -63,6 +63,8 @@ gulp.task('build:js', () => {
     .pipe(sourcemaps.write('.')) // writes .map file
     .pipe(gulp.dest(`${paths.js.dist}`));
 });
+
+
 
 gulp.task('build:css', () => {
   return gulp.src('src/scss/*.scss')
